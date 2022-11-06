@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:your_manga_uikit/widgets/icons/svg_icons.dart';
+import 'package:your_manga_uikit/widgets/pattern/svg_patterns.dart';
 import 'package:your_manga_uikit/widgets/text/text.dart';
 
 void main() {
@@ -32,6 +33,15 @@ class MyApp extends StatelessWidget {
                   const TextHeaderLight('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center),
                   const TextBody('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center),
                   const TextCaption('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPatterns.blob(size: 100,),
+                      SvgPatterns.puddle(size: 100,),
+                      SvgPatterns.wave(size: 100,),
+                    ],
+                  ),
+
             ],
         ),
           ),
