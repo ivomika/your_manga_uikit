@@ -94,6 +94,7 @@ class SvgIcons extends StatelessWidget {
       width: size ?? 24,
       height: size ?? 24,
       color: color,
+      package: 'your_manga_uikit',
     );
   }
 }
