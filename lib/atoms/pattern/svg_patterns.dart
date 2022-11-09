@@ -17,21 +17,21 @@ class SvgPatterns extends SvgIcons {
             color: color);
 
   factory SvgPatterns.blob({double? size, Color? color}) => SvgPatterns(
-        path: 'assets/patterns/blob_pattern.svg',
+        path: 'packages/your_manga_uikit/assets/patterns/blob_pattern.svg',
         label: 'blob pattern',
         size: size,
         color: color,
       );
 
   factory SvgPatterns.puddle({double? size, Color? color}) => SvgPatterns(
-    path: 'assets/patterns/puddle_pattern.svg',
+    path: 'packages/your_manga_uikit/assets/patterns/puddle_pattern.svg',
     label: 'puddle pattern',
     size: size,
     color: color,
   );
 
   factory SvgPatterns.wave({double? size, Color? color}) => SvgPatterns(
-    path: 'assets/patterns/wave_pattern.svg',
+    path: 'packages/your_manga_uikit/assets/patterns/wave_pattern.svg',
     label: 'wave pattern',
     size: size,
     color: color,

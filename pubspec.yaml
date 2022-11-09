@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.1.6
+  theme_tailor_annotation: ^1.0.3
 
 
 dev_dependencies:
@@ -19,31 +20,43 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
   theme_tailor: ^1.0.8
+  build_runner: ^2.3.2
 
 flutter:
   uses-material-design: true
   assets:
-     - assets/icons/
-     - assets/patterns/
+     - packages/your_manga_uikit/assets/icons/arrow_down.svg
+     - packages/your_manga_uikit/assets/icons/arrow_up.svg
+     - packages/your_manga_uikit/assets/icons/back_arrow.svg
+     - packages/your_manga_uikit/assets/icons/check.svg
+     - packages/your_manga_uikit/assets/icons/filter.svg
+     - packages/your_manga_uikit/assets/icons/google_logo.svg
+     - packages/your_manga_uikit/assets/icons/play.svg
+     - packages/your_manga_uikit/assets/icons/search.svg
+     - packages/your_manga_uikit/assets/icons/star.svg
+     - packages/your_manga_uikit/assets/icons/download.svg
+     - packages/your_manga_uikit/assets/patterns/blob_pattern.svg
+     - packages/your_manga_uikit/assets/patterns/puddle_pattern.svg
+     - packages/your_manga_uikit/assets/patterns/wave_pattern.svg
 
   fonts:
     - family: San Francisco
       fonts:
-        - asset: assets/fonts/SF-Pro-Display-Black.otf
-        - asset: assets/fonts/SF-Pro-Display-BlackItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Bold.otf
-        - asset: assets/fonts/SF-Pro-Display-BoldItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Heavy.otf
-        - asset: assets/fonts/SF-Pro-Display-HeavyItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Light.otf
-        - asset: assets/fonts/SF-Pro-Display-LightItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Medium.otf
-        - asset: assets/fonts/SF-Pro-Display-MediumItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Regular.otf
-        - asset: assets/fonts/SF-Pro-Display-RegularItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
-        - asset: assets/fonts/SF-Pro-Display-SemiboldItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Thin.otf
-        - asset: assets/fonts/SF-Pro-Display-ThinItalic.otf
-        - asset: assets/fonts/SF-Pro-Display-Ultralight.otf
-        - asset: assets/fonts/SF-Pro-Display-UltralightItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Black.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-BlackItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Bold.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-BoldItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Heavy.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-HeavyItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Light.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-LightItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Medium.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-MediumItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Regular.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-RegularItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Semibold.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-SemiboldItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Thin.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-ThinItalic.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-Ultralight.otf
+        - asset: packages/your_manga_uikit/assets/fonts/SF-Pro-Display-UltralightItalic.otf

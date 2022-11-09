@@ -16,7 +16,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.arrowDown({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/arrow_down.svg',
+        path: 'packages/your_manga_uikit/assets/icons/arrow_down.svg',
         label: 'arrow down',
         size: size,
         color: color,
@@ -24,7 +24,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.arrowUp({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/arrow_up.svg',
+        path: 'packages/your_manga_uikit/assets/icons/arrow_up.svg',
         label: 'arrow up',
         size: size,
         color: color,
@@ -32,7 +32,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.arrowLeft({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/back_arrow.svg',
+        path: 'packages/your_manga_uikit/assets/icons/back_arrow.svg',
         label: 'arrow left',
         size: size,
         color: color,
@@ -40,7 +40,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.check({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/check.svg',
+        path: 'packages/your_manga_uikit/assets/icons/check.svg',
         label: 'check',
         size: size,
         color: color,
@@ -48,7 +48,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.filter({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/filter.svg',
+        path: 'packages/your_manga_uikit/assets/icons/filter.svg',
         label: 'filter',
         size: size,
         color: color,
@@ -56,7 +56,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.googleLogo({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/google_logo.svg',
+        path: 'packages/your_manga_uikit/assets/icons/google_logo.svg',
         label: 'google logo',
         size: size,
         color: color,
@@ -64,7 +64,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.play({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/play.svg',
+        path: 'packages/your_manga_uikit/assets/icons/play.svg',
         label: 'play',
         size: size,
         color: color,
@@ -72,7 +72,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.search({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/search.svg',
+        path: 'packages/your_manga_uikit/assets/icons/search.svg',
         label: 'search',
         size: size,
         color: color,
@@ -80,7 +80,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.star({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/star.svg',
+        path: 'packages/your_manga_uikit/assets/icons/star.svg',
         label: 'star',
         size: size,
         color: color,
@@ -88,7 +88,7 @@ class SvgIcons extends StatelessWidget {
 
   factory SvgIcons.download({double? size, Color? color}) =>
       SvgIcons(
-        path: 'assets/icons/download.svg',
+        path: 'packages/your_manga_uikit/assets/icons/download.svg',
         label: 'download',
         size: size,
         color: color,
@@ -102,7 +102,6 @@ class SvgIcons extends StatelessWidget {
       width: size ?? 24,
       height: size ?? 24,
       color: color,
-      package: 'your_manga_uikit',
     );
   }
 }

@@ -86,6 +86,7 @@ class _AppExampleState extends State<AppExample> {
               margin: const EdgeInsets.only(top: 20),
               text: 'Лучшее в этом месяце',
               pattern: SvgPatterns.wave(),)),
+
           ],
         ),
       ),

@@ -26,7 +26,6 @@ class _AppText extends StatelessWidget {
           fontSize: size ?? 12,
           fontWeight: width ?? FontWeight.w400,
           fontFamily: 'San Francisco',
-          package: 'your_manga_uikit',
           color: color ?? Colors.black,
           height: height
       ),
