@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:your_manga_uikit/widgets/icons/svg_icons.dart';
+
+import '../icons/svg_icons.dart';
 
 class SvgPatterns extends SvgIcons {
   const SvgPatterns(

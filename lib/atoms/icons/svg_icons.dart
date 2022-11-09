@@ -86,6 +86,14 @@ class SvgIcons extends StatelessWidget {
         color: color,
       );
 
+  factory SvgIcons.download({double? size, Color? color}) =>
+      SvgIcons(
+        path: 'assets/icons/download.svg',
+        label: 'download',
+        size: size,
+        color: color,
+      );
+
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(

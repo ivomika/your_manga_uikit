@@ -67,7 +67,7 @@ class TextCaption extends _AppText {
           align: align,
           size: size ?? 10,
           height: height ?? 1,
-          color: color ?? Colors.black54,
+          color: color,
           width: FontWeight.w400
       );
 }
