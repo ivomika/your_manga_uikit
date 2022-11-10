@@ -58,6 +58,8 @@ class _AppExampleState extends State<AppExample> {
             SvgIcons.googleLogo(),
             SvgIcons.play(),
             SvgIcons.download(),
+            SvgIcons.save(),
+            SvgIcons.saveAll(),
             const TextHeader('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center,),
             const TextHeaderLight('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center),
             const TextBody('Название которое вообще не влазиет в рамку потому что японцы приколисты', align: TextAlign.center),

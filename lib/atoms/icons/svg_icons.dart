@@ -94,6 +94,22 @@ class SvgIcons extends StatelessWidget {
         color: color,
       );
 
+  factory SvgIcons.save({double? size, Color? color}) =>
+      SvgIcons(
+        path: 'packages/your_manga_uikit/assets/icons/save.svg',
+        label: 'save',
+        size: size,
+        color: color,
+      );
+
+  factory SvgIcons.saveAll({double? size, Color? color}) =>
+      SvgIcons(
+        path: 'packages/your_manga_uikit/assets/icons/save_all.svg',
+        label: 'save all',
+        size: size,
+        color: color,
+      );
+
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(

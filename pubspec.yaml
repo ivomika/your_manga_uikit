@@ -35,6 +35,8 @@ flutter:
      - packages/your_manga_uikit/assets/icons/search.svg
      - packages/your_manga_uikit/assets/icons/star.svg
      - packages/your_manga_uikit/assets/icons/download.svg
+     - packages/your_manga_uikit/assets/icons/save.svg
+     - packages/your_manga_uikit/assets/icons/save_all.svg
      - packages/your_manga_uikit/assets/patterns/blob_pattern.svg
      - packages/your_manga_uikit/assets/patterns/puddle_pattern.svg
      - packages/your_manga_uikit/assets/patterns/wave_pattern.svg
