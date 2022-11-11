@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:your_manga_uikit/atoms/pattern/svg_patterns.dart';
 import 'package:your_manga_uikit/atoms/text/text.dart';
 import 'package:your_manga_uikit/atoms/theme/interface_fields.dart';
+import 'package:your_manga_uikit/bloc/loading_bloc.dart';
 import 'package:your_manga_uikit/utils/media_query_utils.dart';
 
 class YMWidget extends StatefulWidget {
@@ -24,6 +26,19 @@ class YMWidget extends StatefulWidget {
 }
 
 class _YMWidgetState extends State<YMWidget> {
+
+  Widget _buildPlaceholder(BuildContext context, double width, double height){
+    return Container(
+      width: width,
+      height: height,
+      margin: widget.margin ?? EdgeInsets.zero,
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+          color: widget.backgroundColor ?? context.interfaceFields.bgLoading,
+          borderRadius: const BorderRadius.all(Radius.circular(16))),
+    );
+  }
+
   Widget _build(BuildContext context, double width, double height) {
     return Container(
       width: width,
@@ -54,6 +69,11 @@ class _YMWidgetState extends State<YMWidget> {
 
   @override
   Widget build(BuildContext context) {
+    var bloc = context.watch<LoadingBloc>();
+    if(bloc.state){
+      return MediaQueryUtils.wrapper(context, _buildPlaceholder(context, 300, 170));
+    }
+
     return MediaQueryUtils.wrapper(context, _build(context, 300, 170));
   }
 }
