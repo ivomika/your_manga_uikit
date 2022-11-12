@@ -66,7 +66,7 @@ class SvgIcons extends StatelessWidget {
       SvgIcons(
         path: 'packages/your_manga_uikit/assets/icons/play.svg',
         label: 'play',
-        size: size,
+        size: size ?? 48,
         color: color,
       );
 
@@ -98,7 +98,7 @@ class SvgIcons extends StatelessWidget {
       SvgIcons(
         path: 'packages/your_manga_uikit/assets/icons/save.svg',
         label: 'save',
-        size: size,
+        size: size ?? 48,
         color: color,
       );
 
@@ -106,7 +106,7 @@ class SvgIcons extends StatelessWidget {
       SvgIcons(
         path: 'packages/your_manga_uikit/assets/icons/save_all.svg',
         label: 'save all',
-        size: size,
+        size: size ?? 48,
         color: color,
       );
 
