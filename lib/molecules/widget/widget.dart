@@ -69,7 +69,7 @@ class _YMWidgetState extends State<YMWidget> {
 
   @override
   Widget build(BuildContext context) {
-    var bloc = context.watch<LoadingBloc>();
+    var bloc = context.watch<LoadingContentBloc>();
     if(bloc.state){
       return MediaQueryUtils.wrapper(context, _buildPlaceholder(context, 300, 170));
     }
