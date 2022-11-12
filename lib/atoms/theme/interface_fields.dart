@@ -19,6 +19,9 @@ class _$InterfaceFields{
   static List<Color> accentPrimary = [const Color(0xFF786FA6), const Color(0xFF786FA6)];
   static List<Color> accentSecondary = [const Color(0xFF3DC1D3), const Color(0xFF3DC1D3)];
 
+  static List<Color> buttonPrimary = [const Color(0xFF786FA6), const Color(0xFF786FA6)];
+  static List<Color> buttonHoverPrimary = [const Color(0xFF544E75), const Color(0xFF544E75)];
+
   static List<Color> error = [const Color(0xFFE66767), const Color(0xFFE66767)];
   static List<Color> warning = [const Color(0xFFF5CD79), const Color(0xFFF5CD79)];
 }

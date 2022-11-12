@@ -19,6 +19,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
     required this.textPlaceholder,
     required this.accentPrimary,
     required this.accentSecondary,
+    required this.buttonPrimary,
+    required this.buttonHoverPrimary,
     required this.error,
     required this.warning,
   });
@@ -32,6 +34,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
   final Color textPlaceholder;
   final Color accentPrimary;
   final Color accentSecondary;
+  final Color buttonPrimary;
+  final Color buttonHoverPrimary;
   final Color error;
   final Color warning;
 
@@ -45,6 +49,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
     textPlaceholder: _$InterfaceFields.textPlaceholder[0],
     accentPrimary: _$InterfaceFields.accentPrimary[0],
     accentSecondary: _$InterfaceFields.accentSecondary[0],
+    buttonPrimary: _$InterfaceFields.buttonPrimary[0],
+    buttonHoverPrimary: _$InterfaceFields.buttonHoverPrimary[0],
     error: _$InterfaceFields.error[0],
     warning: _$InterfaceFields.warning[0],
   );
@@ -59,6 +65,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
     textPlaceholder: _$InterfaceFields.textPlaceholder[1],
     accentPrimary: _$InterfaceFields.accentPrimary[1],
     accentSecondary: _$InterfaceFields.accentSecondary[1],
+    buttonPrimary: _$InterfaceFields.buttonPrimary[1],
+    buttonHoverPrimary: _$InterfaceFields.buttonHoverPrimary[1],
     error: _$InterfaceFields.error[1],
     warning: _$InterfaceFields.warning[1],
   );
@@ -79,6 +87,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
     Color? textPlaceholder,
     Color? accentPrimary,
     Color? accentSecondary,
+    Color? buttonPrimary,
+    Color? buttonHoverPrimary,
     Color? error,
     Color? warning,
   }) {
@@ -92,6 +102,8 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
       textPlaceholder: textPlaceholder ?? this.textPlaceholder,
       accentPrimary: accentPrimary ?? this.accentPrimary,
       accentSecondary: accentSecondary ?? this.accentSecondary,
+      buttonPrimary: buttonPrimary ?? this.buttonPrimary,
+      buttonHoverPrimary: buttonHoverPrimary ?? this.buttonHoverPrimary,
       error: error ?? this.error,
       warning: warning ?? this.warning,
     );
@@ -110,6 +122,9 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
       textPlaceholder: Color.lerp(textPlaceholder, other.textPlaceholder, t)!,
       accentPrimary: Color.lerp(accentPrimary, other.accentPrimary, t)!,
       accentSecondary: Color.lerp(accentSecondary, other.accentSecondary, t)!,
+      buttonPrimary: Color.lerp(buttonPrimary, other.buttonPrimary, t)!,
+      buttonHoverPrimary:
+          Color.lerp(buttonHoverPrimary, other.buttonHoverPrimary, t)!,
       error: Color.lerp(error, other.error, t)!,
       warning: Color.lerp(warning, other.warning, t)!,
     );
@@ -135,6 +150,10 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
                 .equals(accentPrimary, other.accentPrimary) &&
             const DeepCollectionEquality()
                 .equals(accentSecondary, other.accentSecondary) &&
+            const DeepCollectionEquality()
+                .equals(buttonPrimary, other.buttonPrimary) &&
+            const DeepCollectionEquality()
+                .equals(buttonHoverPrimary, other.buttonHoverPrimary) &&
             const DeepCollectionEquality().equals(error, other.error) &&
             const DeepCollectionEquality().equals(warning, other.warning));
   }
@@ -152,12 +171,12 @@ class InterfaceFields extends ThemeExtension<InterfaceFields> {
         const DeepCollectionEquality().hash(textPlaceholder),
         const DeepCollectionEquality().hash(accentPrimary),
         const DeepCollectionEquality().hash(accentSecondary),
+        const DeepCollectionEquality().hash(buttonPrimary),
+        const DeepCollectionEquality().hash(buttonHoverPrimary),
         const DeepCollectionEquality().hash(error),
         const DeepCollectionEquality().hash(warning));
   }
 }
-
-
 
 extension InterfaceFieldsBuildContext on BuildContext {
   InterfaceFields get interfaceFields =>
