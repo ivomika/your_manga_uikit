@@ -26,6 +26,8 @@ class YMWidget extends StatefulWidget {
 }
 
 class _YMWidgetState extends State<YMWidget> {
+  var _loading = true;
+
 
   Widget _buildPlaceholder(BuildContext context, double width, double height){
     return Container(
@@ -69,8 +71,18 @@ class _YMWidgetState extends State<YMWidget> {
 
   @override
   Widget build(BuildContext context) {
-    var bloc = context.watch<LoadingContentBloc>();
-    if(bloc.state){
+    /// проверка локальной переменной
+    /// если мы уже загрузили контент больше не отслеживаем состояния
+    if(_loading){
+      /// берем у родителей состояние страницы
+      /// Контент грузиться/загрузился
+      var bloc = context.watch<LoadingContentBloc>();
+      setState(() {
+        _loading = bloc.state;
+      });
+    }
+
+    if(_loading){
       return MediaQueryUtils.wrapper(context, _buildPlaceholder(context, 300, 170));
     }
 
