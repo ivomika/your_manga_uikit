@@ -65,17 +65,17 @@ class _YMPinCodeFieldState extends State<YMPinCodeField> {
       focusedPinTheme: defaultPinTheme.copyWith(
         decoration: defaultPinTheme.decoration!.copyWith(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: focusedBorderColor),
+          border: Border.all(color: focusedBorderColor, width: 2),
         ),
       ),
       submittedPinTheme: defaultPinTheme.copyWith(
         decoration: defaultPinTheme.decoration!.copyWith(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: focusedBorderColor),
+          border: Border.all(color: focusedBorderColor, width: 2),
         ),
       ),
       errorPinTheme: defaultPinTheme.copyBorderWith(
-        border: Border.all(color: context.interfaceFields.error),
+        border: Border.all(color: context.interfaceFields.error, width: 2),
       ),
     );
   }
